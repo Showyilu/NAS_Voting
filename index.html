@@ -71,20 +71,20 @@
       <tbody>
         <tr>
           <th scope="row">
-            <img alt="Donald Trump official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/237px-Donald_Trump_official_portrait.jpg" width="118" height="150" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <img alt="Donald Trump official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/237px-Donald_Trump_official_portrait.jpg" width="118" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
             <br />
             <b>Donald Trump</b>
           </th>
           <td class='vertical-align'>June 14, 1946</td>
           <td class='vertical-align'>President of the United States since 2017</td>
           <td class='vertical-align'>New York</td>
-          <td class='vertical-align'>0</td>
+          <td class='vertical-align' id='donaldTrump-vote'>0</td>
           <td class='vertical-align'><button data-vote="donaldTrump" type="button" class="btn btn-primary vote">Vote</button></td>
         </tr>
 
         <tr>
           <th scope="row">
-            <img alt="Jack Fellure official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jack_Fellure.jpg/300px-Jack_Fellure.jpg" width="150" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <img alt="Jack Fellure official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Jack_Fellure.jpg/300px-Jack_Fellure.jpg" width="118" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
             <br />
             <b>Jack Fellure</b>
           </th>
@@ -96,13 +96,13 @@
             Candidate for President in 1988, 1992, 1996, 2000, 2004, 2008, and 2016</span>
           </td>
           <td class='vertical-align'>West Virginia</td>
-          <td class='vertical-align'>0</td>
+          <td class='vertical-align' id='jackFellure-vote'>0</td>
           <td class='vertical-align'><button data-vote="jackFellure" type="button" class="btn btn-primary vote">Vote</button></td>
         </tr>
 
         <tr>
           <th scope="row">
-            <img alt="Jeff Boss official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jeff_Boss.jpg" width="150" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <img alt="Jeff Boss official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Jeff_Boss.jpg" width="118" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
             <br />
             <b>Jeff Boss</b>
           </th>
@@ -118,8 +118,53 @@
               Candidate for U.S. Senate in 2008 and 2014</span>
           </td>
           <td class='vertical-align'>New York</td>
-          <td class='vertical-align'>0</td>
+          <td class='vertical-align' id='jeffBoss-vote'>0</td>
           <td class='vertical-align'><button data-vote="jeffBoss" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="John Delaney official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/John_Delaney_113th_Congress_official_photo.jpg/186px-John_Delaney_113th_Congress_official_photo.jpg" width="118" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>John Delaney</b>
+          </th>
+          <td class='vertical-align'>April 16, 1963</td>
+          <td class='vertical-align'>
+            <b>U.S. Representative from Maryland since 2013</b>
+          </td>
+          <td class='vertical-align'>Maryland</td>
+          <td class='vertical-align' id='johnDelaney-vote'>0</td>
+          <td class='vertical-align'><button data-vote="johnDelaney" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="Andrew Yang official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Andrew_Yang_talking_about_urban_entrepreneurship_at_Techonomy_Conference_2015_in_Detroit%2C_MI_%28cropped%29.jpg/157px-Andrew_Yang_talking_about_urban_entrepreneurship_at_Techonomy_Conference_2015_in_Detroit%2C_MI_%28cropped%29.jpg" width="118" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Andrew Yang</b>
+          </th>
+          <td class='vertical-align'>January 13, 1975</td>
+          <td class='vertical-align'>
+            <b>Entrepreneur</b>
+          </td>
+          <td class='vertical-align'>New York</td>
+          <td class='vertical-align' id='andrewYang-vote'>0</td>
+          <td class='vertical-align'><button data-vote="andrewYang" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="Kanye West official portrait.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Kanye_West_at_the_2009_Tribeca_Film_Festival.jpg/194px-Kanye_West_at_the_2009_Tribeca_Film_Festival.jpg" width="118" height="135" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Kanye West</b>
+          </th>
+          <td class='vertical-align'>June 8, 1977</td>
+          <td class='vertical-align'>
+            <b>Rapper, singer, songwriter, record producer, fashion designer, and entrepreneur</b>
+          </td>
+          <td class='vertical-align'>California</td>
+          <td class='vertical-align' id='kanyeWest-vote'>0</td>
+          <td class='vertical-align'><button data-vote="kanyeWest" type="button" class="btn btn-primary vote">Vote</button></td>
         </tr>
       </tbody>
     </table>    
@@ -152,73 +197,30 @@
       });
     })
 
-    function renderVotes(response) {
-      debugger
-    }
 
     $(document).ready(function(){
-      var to = dappAddress;
-      var value = "0";
-      var callFunction = "get";
-      var callArgs = "[\"donaldTrump\"]"; //in the form of ["args"]
+      const CANDIDATES = ['donaldTrump', 'jackFellure', 'jeffBoss', 'johnDelaney', 'andrewYang', 'kanyeWest'];
 
-      nebPay.simulateCall(to, value, callFunction, callArgs, {    //使用nebpay的simulateCall接口去执行get查询, 模拟执行.不发送交易,不上链
-          listener: function(response) {
-            
-            if(response.result === "null") {
-              return 0;
-            } else {
-              var {name, vote} = JSON.parse(response.result) 
-              console.log( name + ' : ' + vote );
-              debugger
+      CANDIDATES.map(candidate => { 
+        
+        var to = dappAddress;
+        var value = "0";
+        var callFunction = "get";
+        var callArgs = "[\"" + candidate + "\"]"; //in the form of ["args"]
+
+        nebPay.simulateCall(to, value, callFunction, callArgs, {    //使用nebpay的simulateCall接口去执行get查询, 模拟执行.不发送交易,不上链
+            listener: function(response) {
+              
+              if(response.result === "null") {
+                return 0;
+              } else {
+                var {name, vote} = JSON.parse(response.result)
+                console.log( name + ' : ' + vote );
+                $('#'+name+'-vote').text(vote)
+              }
             }
-          }
-      });
-
-
-      // $.ajax({
-      //   url: "http://localhost:8685/v1/user/accountstate",
-      //   type: "POST",
-      //   data: '{"address": "n1XN1G5N8npFxk4zcFckWtAadRpQqgUmLrg"}',
-      //   contentType: "application/json",
-      //   success: function(response){
-
-      //     var url = "http://localhost:8685/v1/user/call";
-
-      //     var data = {
-      //       "from":"n1XN1G5N8npFxk4zcFckWtAadRpQqgUmLrg",
-      //       "to": dappAddress,
-      //       "value": "0",
-      //       "nonce": response.result.nonce,
-      //       "gasPrice":"1000000",
-      //       "gasLimit":"2000000",
-      //       "contract":{"function":"get","args": "[\"donald_trump\"]"}
-      //     }
-
-      //     $.ajax({
-      //       url: url,
-      //       type: "POST",
-      //       data: JSON.stringify(data),
-      //       contentType:"application/json",
-      //       success: function(response){
-              
-      //         var result = response.result.result
-      //         if(result === "null") {
-      //           return 0;
-      //         } else {
-      //           return result;
-      //         }
-      //       },
-      //       error: function(error){
-              
-      //       }
-      //     })
-
-      //   },
-      //   error: function(){
-          
-      //   }
-      // })
+        });
+      })
 
     }) 
   </script>

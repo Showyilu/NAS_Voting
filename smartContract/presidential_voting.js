@@ -1,6 +1,6 @@
 'use strict';
 
-const CANDIDATES = ['donaldTrump', 'jackFellure', 'jeffBoss'];
+const CANDIDATES = ['donaldTrump', 'jackFellure', 'jeffBoss', 'johnDelaney', 'andrewYang', 'kanyeWest'];
 
 var VotingEntry = function (text) {
   if (text) {
